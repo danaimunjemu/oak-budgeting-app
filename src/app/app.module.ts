@@ -13,6 +13,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MODE_STORAGE_SERVICE, ModeLocalStorageService } from "./core/modules/mode/mode-storage.service";
 import { ModeToggleService } from "./core/modules/mode/mode-toggle.service";
 import { AntDesignModules } from "./core/modules/antdesign.module";
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import {RouterModule} from "@angular/router";
 
 registerLocaleData(en);
 
@@ -35,6 +37,7 @@ registerLocaleData(en);
       provide: MODE_STORAGE_SERVICE,
       useClass: ModeLocalStorageService,
     },
+    {provide: LocationStrategy, useClass: HashLocationStrategy}
   ],
   bootstrap: [AppComponent]
 })
