@@ -1,0 +1,7 @@
+@import "../styles/colours";
+
+// mixin that enables css variables in dark mode
+@mixin darken() {
+  --bg-colour: #{$slate1-dark};
+  --buttonColour: #{$yellow9-dark};
+}

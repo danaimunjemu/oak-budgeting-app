@@ -1,0 +1,82 @@
+@import "assets/styles/colours";
+@import "assets/theme/light-theme";
+@import "assets/theme/dark-theme";
+
+//  Dark and Light Mode
+body.dark {
+  @include darken();
+}
+body.light {
+  @include lighten();
+}
+
+//  HEADINGS
+h1, h2, h3, h4, h5, h6 {
+  font-family: Quicksand-Bold, sans-serif;
+}
+
+p {
+  font-family: Poppins, sans-serif;
+}
+
+//  HERO SECTION
+.hero-heading {
+  font-size: 50px;
+}
+
+.hero-paragraph {
+  font-size: 24px;
+}
+
+.bg {
+  background-color: var(--bg-colour);
+  transition-duration: 0.8s;
+}
+
+.buttonColour {
+  background-color: var(--buttonColour);
+}
+
+/*
+  AUTHENTICATION PAGE
+ */
+.auth-container {
+  height: 100vh;
+  max-width: 100vw;
+  background-color: $slate1-light;
+  //overflow-x: hidden;
+}
+
+.auth-element {
+  height: 100vh;
+  padding: 0px 20px;
+}
+
+.auth-heading {
+  font-family: Quicksand-SemiBold, sans-serif;
+}
+
+.auth-paragraph {
+  font-family: Poppins, sans-serif;
+  color: $slate8-light;
+}
+
+.auth-button {
+  width: 100%;
+}
+
+/*
+  BOOTSTRAP STYLES
+*/
+
+//  NAVBAR
+.navbar-brand {
+  color: #{$lime9-light};
+  font-family: Quicksand-Bold, sans-serif;
+  font-size: 32px;
+}
+
+//  CAROUSEL
+.carousel-image {
+  max-height: 750px;
+}

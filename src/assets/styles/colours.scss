@@ -1,0 +1,250 @@
+//  This Application uses the Radix-UI Colour System
+
+/*
+
+--RADIX COLOUR SYSTEM GUIDE--
+1 -> App background
+2 -> Subtle background
+3 -> UI element background
+4 -> Hovered UI element background
+5 -> Active / Selected UI element background
+6 -> Subtle borders and separators
+7 -> UI element border and focus rings
+8 -> Hovered UI element border
+9 -> Solid backgrounds
+10 -> Hovered solid backgrounds
+11 -> Low-contrast text
+12 -> High-contrast text
+
+ */
+
+//  LIGHT MODE
+//  Primary Colour
+$lime1-light: hsl(85, 50.0%, 98.7%);
+$lime2-light: hsl(85, 66.7%, 96.5%);
+$lime3-light: hsl(85, 76.0%, 92.3%);
+$lime4-light: hsl(84, 75.3%, 87.5%);
+$lime5-light: hsl(84, 71.5%, 81.9%);
+$lime6-light: hsl(82, 65.0%, 74.6%);
+$lime7-light: hsl(79, 53.2%, 61.8%);
+$lime8-light: hsl(76, 61.7%, 45.1%);
+$lime9-light: hsl(81, 67.0%, 50.0%);
+$lime10-light: hsl(80, 68.3%, 46.9%);
+$lime11-light: hsl(75, 80.0%, 26.0%);
+$lime12-light: hsl(78, 70.0%, 11.5%);
+
+//  Secondary Colour
+$yellow1-light: hsl(60, 54.0%, 98.5%);
+$yellow2-light: hsl(52, 100%, 95.5%);
+$yellow3-light: hsl(55, 100%, 90.9%);
+$yellow4-light: hsl(54, 100%, 86.6%);
+$yellow5-light: hsl(52, 97.9%, 82.0%);
+$yellow6-light: hsl(50, 89.4%, 76.1%);
+$yellow7-light: hsl(47, 80.4%, 68.0%);
+$yellow8-light: hsl(48, 100%, 46.1%);
+$yellow9-light: hsl(53, 92.0%, 50.0%);
+$yellow10-light: hsl(50, 100%, 48.5%);
+$yellow11-light: hsl(42, 100%, 29.0%);
+$yellow12-light: hsl(40, 55.0%, 13.5%);
+
+//  Gray -> Slate Gray
+$slate1-light: hsl(206, 30.0%, 98.8%);
+$slate2-light: hsl(210, 16.7%, 97.6%);
+$slate3-light: hsl(209, 13.3%, 95.3%);
+$slate4-light: hsl(209, 12.2%, 93.2%);
+$slate5-light: hsl(208, 11.7%, 91.1%);
+$slate6-light: hsl(208, 11.3%, 88.9%);
+$slate7-light: hsl(207, 11.1%, 85.9%);
+$slate8-light: hsl(205, 10.7%, 78.0%);
+$slate9-light: hsl(206, 6.0%, 56.1%);
+$slate10-light: hsl(206, 5.8%, 52.3%);
+$slate11-light: hsl(206, 6.0%, 43.5%);
+$slate12-light: hsl(206, 24.0%, 9.0%);
+
+//  Red -> Danger
+$red1-light: hsl(359, 100%, 99.4%);
+$red2-light: hsl(359, 100%, 98.6%);
+$red3-light: hsl(360, 100%, 96.8%);
+$red4-light: hsl(360, 97.9%, 94.8%);
+$red5-light: hsl(360, 90.2%, 91.9%);
+$red6-light: hsl(360, 81.7%, 87.8%);
+$red7-light: hsl(359, 74.2%, 81.7%);
+$red8-light: hsl(359, 69.5%, 74.3%);
+$red9-light: hsl(358, 75.0%, 59.0%);
+$red10-light: hsl(358, 69.4%, 55.2%);
+$red11-light: hsl(358, 65.0%, 48.7%);
+$red12-light: hsl(354, 50.0%, 14.6%);
+
+//  Amber -> Warning
+$amber1-light: hsl(39, 70.0%, 99.0%);
+$amber2-light: hsl(40, 100%, 96.5%);
+$amber3-light: hsl(44, 100%, 91.7%);
+$amber4-light: hsl(43, 100%, 86.8%);
+$amber5-light: hsl(42, 100%, 81.8%);
+$amber6-light: hsl(38, 99.7%, 76.3%);
+$amber7-light: hsl(36, 86.1%, 67.1%);
+$amber8-light: hsl(35, 85.2%, 55.1%);
+$amber9-light: hsl(39, 100%, 57.0%);
+$amber10-light: hsl(35, 100%, 55.5%);
+$amber11-light: hsl(30, 100%, 34.0%);
+$amber12-light: hsl(20, 80.0%, 17.0%);
+
+//  Green -> Success
+$grass1-light: hsl(116, 50.0%, 98.9%);
+$grass2-light: hsl(120, 60.0%, 97.1%);
+$grass3-light: hsl(120, 53.6%, 94.8%);
+$grass4-light: hsl(121, 47.5%, 91.4%);
+$grass5-light: hsl(122, 42.6%, 86.5%);
+$grass6-light: hsl(124, 39.0%, 79.7%);
+$grass7-light: hsl(126, 37.1%, 70.2%);
+$grass8-light: hsl(131, 38.1%, 56.3%);
+$grass9-light: hsl(131, 41.0%, 46.5%);
+$grass10-light: hsl(132, 43.1%, 42.2%);
+$grass11-light: hsl(133, 50.0%, 32.5%);
+$grass12-light: hsl(130, 30.0%, 14.9%);
+
+//  Blue -> Info
+$blue1-light: hsl(206, 100%, 99.2%);
+$blue2-light: hsl(210, 100%, 98.0%);
+$blue3-light: hsl(209, 100%, 96.5%);
+$blue4-light: hsl(210, 98.8%, 94.0%);
+$blue5-light: hsl(209, 95.0%, 90.1%);
+$blue6-light: hsl(209, 81.2%, 84.5%);
+$blue7-light: hsl(208, 77.5%, 76.9%);
+$blue8-light: hsl(206, 81.9%, 65.3%);
+$blue9-light: hsl(206, 100%, 50.0%);
+$blue10-light: hsl(208, 100%, 47.3%);
+$blue11-light: hsl(211, 100%, 43.2%);
+$blue12-light: hsl(211, 100%, 15.0%);
+
+
+//  DARK MODE
+
+//  Primary Colour
+$lime1-dark: hsl(75, 55.0%, 6.0%);
+$lime2-dark: hsl(74, 56.8%, 7.3%);
+$lime3-dark: hsl(78, 50.2%, 9.9%);
+$lime4-dark: hsl(79, 50.3%, 12.1%);
+$lime5-dark: hsl(79, 52.6%, 14.2%);
+$lime6-dark: hsl(78, 55.7%, 16.7%);
+$lime7-dark: hsl(77, 59.7%, 20.1%);
+$lime8-dark: hsl(75, 64.8%, 24.5%);
+$lime9-dark: hsl(81, 67.0%, 50.0%);
+$lime10-dark: hsl(75, 85.0%, 60.0%);
+$lime11-dark: hsl(81, 70.0%, 43.8%);
+$lime12-dark: hsl(84, 79.0%, 92.6%);
+
+//  Secondary Colour
+$yellow1-dark: hsl(45, 100%, 5.5%);
+$yellow2-dark: hsl(46, 100%, 6.7%);
+$yellow3-dark: hsl(45, 100%, 8.7%);
+$yellow4-dark: hsl(45, 100%, 10.4%);
+$yellow5-dark: hsl(47, 100%, 12.1%);
+$yellow6-dark: hsl(49, 100%, 14.3%);
+$yellow7-dark: hsl(49, 90.3%, 18.4%);
+$yellow8-dark: hsl(50, 100%, 22.0%);
+$yellow9-dark: hsl(53, 92.0%, 50.0%);
+$yellow10-dark: hsl(54, 100%, 68.0%);
+$yellow11-dark: hsl(48, 100%, 47.0%);
+$yellow12-dark: hsl(53, 100%, 91.0%);
+
+//  Gray -> Slate Gray
+$slate1-dark: hsl(200, 7.0%, 8.8%);
+$slate2-dark: hsl(195, 7.1%, 11.0%);
+$slate3-dark: hsl(197, 6.8%, 13.6%);
+$slate4-dark: hsl(198, 6.6%, 15.8%);
+$slate5-dark: hsl(199, 6.4%, 17.9%);
+$slate6-dark: hsl(201, 6.2%, 20.5%);
+$slate7-dark: hsl(203, 6.0%, 24.3%);
+$slate8-dark: hsl(207, 5.6%, 31.6%);
+$slate9-dark: hsl(206, 6.0%, 43.9%);
+$slate10-dark: hsl(206, 5.2%, 49.5%);
+$slate11-dark: hsl(206, 6.0%, 63.0%);
+$slate12-dark: hsl(210, 6.0%, 93.0%);
+
+//  Red -> Danger
+$red1-dark: hsl(353, 23.0%, 9.8%);
+$red2-dark: hsl(357, 34.4%, 12.0%);
+$red3-dark: hsl(356, 43.4%, 16.4%);
+$red4-dark: hsl(356, 47.6%, 19.2%);
+$red5-dark: hsl(356, 51.1%, 21.9%);
+$red6-dark: hsl(356, 55.2%, 25.9%);
+$red7-dark: hsl(357, 60.2%, 31.8%);
+$red8-dark: hsl(358, 65.0%, 40.4%);
+$red9-dark: hsl(358, 75.0%, 59.0%);
+$red10-dark: hsl(358, 85.3%, 64.0%);
+$red11-dark: hsl(358, 100%, 69.5%);
+$red12-dark: hsl(351, 89.0%, 96.0%);
+
+//  Amber -> Warning
+$amber1-dark: hsl(36, 100%, 6.1%);
+$amber2-dark: hsl(35, 100%, 7.6%);
+$amber3-dark: hsl(32, 100%, 10.2%);
+$amber4-dark: hsl(32, 100%, 12.4%);
+$amber5-dark: hsl(33, 100%, 14.6%);
+$amber6-dark: hsl(35, 100%, 17.1%);
+$amber7-dark: hsl(35, 91.0%, 21.6%);
+$amber8-dark: hsl(36, 100%, 25.5%);
+$amber9-dark: hsl(39, 100%, 57.0%);
+$amber10-dark: hsl(43, 100%, 64.0%);
+$amber11-dark: hsl(39, 90.0%, 49.8%);
+$amber12-dark: hsl(39, 97.0%, 93.2%);
+
+//  Green -> Success
+$grass1-dark: hsl(146, 30.0%, 7.4%);
+$grass2-dark: hsl(136, 33.3%, 8.8%);
+$grass3-dark: hsl(137, 36.0%, 11.4%);
+$grass4-dark: hsl(137, 37.6%, 13.7%);
+$grass5-dark: hsl(136, 38.7%, 16.0%);
+$grass6-dark: hsl(135, 39.6%, 19.1%);
+$grass7-dark: hsl(134, 40.3%, 23.8%);
+$grass8-dark: hsl(131, 40.1%, 30.8%);
+$grass9-dark: hsl(131, 41.0%, 46.5%);
+$grass10-dark: hsl(131, 39.0%, 52.1%);
+$grass11-dark: hsl(131, 43.0%, 57.2%);
+$grass12-dark: hsl(137, 72.0%, 94.0%);
+
+//  Blue -> Info
+$blue1-dark: hsl(212, 35.0%, 9.2%);
+$blue2-dark: hsl(216, 50.0%, 11.8%);
+$blue3-dark: hsl(214, 59.4%, 15.3%);
+$blue4-dark: hsl(214, 65.8%, 17.9%);
+$blue5-dark: hsl(213, 71.2%, 20.2%);
+$blue6-dark: hsl(212, 77.4%, 23.1%);
+$blue7-dark: hsl(211, 85.1%, 27.4%);
+$blue8-dark: hsl(211, 89.7%, 34.1%);
+$blue9-dark: hsl(206, 100%, 50.0%);
+$blue10-dark: hsl(209, 100%, 60.6%);
+$blue11-dark: hsl(210, 100%, 66.1%);
+$blue12-dark: hsl(206, 98.0%, 95.8%);
+
+
+//  OVERLAYS
+
+//  Black Overlay
+$blackA1: hsla(0, 0%, 0%, 0.012);
+$blackA2: hsla(0, 0%, 0%, 0.027);
+$blackA3: hsla(0, 0%, 0%, 0.047);
+$blackA4: hsla(0, 0%, 0%, 0.071);
+$blackA5: hsla(0, 0%, 0%, 0.090);
+$blackA6: hsla(0, 0%, 0%, 0.114);
+$blackA7: hsla(0, 0%, 0%, 0.141);
+$blackA8: hsla(0, 0%, 0%, 0.220);
+$blackA9: hsla(0, 0%, 0%, 0.439);
+$blackA10: hsla(0, 0%, 0%, 0.478);
+$blackA11: hsla(0, 0%, 0%, 0.565);
+$blackA12: hsla(0, 0%, 0%, 0.910);
+
+//  White Overlay
+$whiteA1: hsla(0, 0%, 100%, 0);
+$whiteA2: hsla(0, 0%, 100%, 0.013);
+$whiteA3: hsla(0, 0%, 100%, 0.034);
+$whiteA4: hsla(0, 0%, 100%, 0.056);
+$whiteA5: hsla(0, 0%, 100%, 0.086);
+$whiteA6: hsla(0, 0%, 100%, 0.124);
+$whiteA7: hsla(0, 0%, 100%, 0.176);
+$whiteA8: hsla(0, 0%, 100%, 0.249);
+$whiteA9: hsla(0, 0%, 100%, 0.386);
+$whiteA10: hsla(0, 0%, 100%, 0.446);
+$whiteA11: hsla(0, 0%, 100%, 0.592);
+$whiteA12: hsla(0, 0%, 100%, 0.923);
