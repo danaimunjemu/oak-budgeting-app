@@ -2,6 +2,8 @@
 
 // mixin that enables css variables in dark mode
 @mixin lighten() {
-  --bg-colour: #{$slate1-light};
-  --buttonColour: #{$lime9-light};
+  --sideNavBg: #{$slate1-light};
+  --bgColor: #{$slate1-light};
+  --textColor: #{$slate12-light};
+  --borderColor: #{$slate1-light};
 }

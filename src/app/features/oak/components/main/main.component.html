@@ -1,0 +1,128 @@
+
+
+
+<div class="app-container">
+  <nz-layout>
+    <!-- SIDE NAVIGATION -->
+
+    <nz-sider nzCollapsible nzWidth="250px" nzBreakpoint="lg" [nzTrigger]="null" [(nzCollapsed)]="isCollapsed">
+      <div class="side-bar-logo d-flex justify-content-center" style="height: 115px">
+        <img src="/assets/images/AFC.png" alt="" class="logo-nav-sm" [hidden]="!isCollapsed">
+        <img src="/assets/images/logo-full.png" alt="" class="logo-nav" [hidden]="isCollapsed">
+      </div>
+      <div id="parent">
+        <div class="desktop-sider d-flex justify-content-center align-items-center" (click)="isCollapsed = !isCollapsed">
+                <span
+                  class="trigger"
+                  nz-icon
+                  [nzType]="isCollapsed ? 'right-circle' : 'left-circle'"
+                ></span>
+        </div>
+        <div class="menu-items">
+          <ul nz-menu nzTheme="dark" nzMode="inline">
+            <li nz-menu-item routerLink="/agency/agency/dashboard" routerLinkActive="ant-menu-item-selected">
+              <span nz-icon nzType="dashboard"></span>
+              <span>Dashboard</span>
+            </li>
+            <li nz-menu-item routerLink="/agency/agency/banking" routerLinkActive="ant-menu-item-selected">
+              <span nz-icon nzType="bank"></span>
+              <span>Banking</span>
+            </li>
+            <li nz-menu-item routerLink="/agency/agency/guide" routerLinkActive="ant-menu-item-selected">
+              <span nz-icon nzType="bulb"></span>
+              <span>Guide</span>
+            </li>
+            <li nz-menu-item class="logout-button" (click)="logout()">
+              <span nz-icon nzType="poweroff"></span>
+              <span>Logout</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+      <!--      <div class="side-nav-lower d-flex justify-content-center">-->
+      <!--        <div class="icon-button responsive-press logout-button d-flex justify-content-center align-items-center" (click)="logout()">-->
+      <!--          <span nz-icon nzType="logout" nzTheme="outline"></span>-->
+      <!--        </div>-->
+      <!--      </div>-->
+    </nz-sider>
+    <nz-layout>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Dashboard</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <nz-switch
+                [ngModel]="mode"
+                name="modeToggle"
+                [nzCheckedChildren]="checkedTemplate"
+                [nzUnCheckedChildren]="unCheckedTemplate"
+                (click)="toggle()"
+              ></nz-switch>
+              <ng-template #checkedTemplate>
+                <svg class="dark-mode-toggle-icon" xmlns="http://www.w3.org/2000/svg" viewBox="-2 -1.5 24 24" width="24" fill="currentColor"><path d="M10 15.565a5 5 0 1 1 0-10 5 5 0 0 1 0 10zm0-15a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0v-2a1 1 0 0 1 1-1zm0 16a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0v-2a1 1 0 0 1 1-1zm-9-7h2a1 1 0 1 1 0 2H1a1 1 0 0 1 0-2zm16 0h2a1 1 0 0 1 0 2h-2a1 1 0 0 1 0-2zm.071-6.071a1 1 0 0 1 0 1.414l-1.414 1.414a1 1 0 1 1-1.414-1.414l1.414-1.414a1 1 0 0 1 1.414 0zM5.757 14.808a1 1 0 0 1 0 1.414l-1.414 1.414a1 1 0 1 1-1.414-1.414l1.414-1.414a1 1 0 0 1 1.414 0zM4.343 3.494l1.414 1.414a1 1 0 0 1-1.414 1.414L2.93 4.908a1 1 0 0 1 1.414-1.414zm11.314 11.314l1.414 1.414a1 1 0 0 1-1.414 1.414l-1.414-1.414a1 1 0 1 1 1.414-1.414z"></path></svg>
+              </ng-template>
+              <ng-template #unCheckedTemplate>
+                <svg class="dark-mode-toggle-icon" xmlns="http://www.w3.org/2000/svg" viewBox="-4 -2 24 24" width="24" fill="currentColor"><path d="M12.253.335A10.086 10.086 0 0 0 8.768 8c0 4.632 3.068 8.528 7.232 9.665A9.555 9.555 0 0 1 9.742 20C4.362 20 0 15.523 0 10S4.362 0 9.742 0c.868 0 1.71.117 2.511.335z"></path></svg>
+              </ng-template>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <nz-content>
+        <div class="inner-content">
+          <div class="d-flex justify-content-center mt-3">
+          </div>
+
+          <!--          <div class="toggle-btn-container">-->
+          <!--            <button (click)="toggle()">-->
+          <!--              <span class="light">LIGHT</span>-->
+          <!--              <span class="dark">DARK</span>-->
+          <!--            </button>-->
+          <!--          </div>-->
+          <!--          <header>-->
+          <!--            <h1>Lorem Ipsum</h1>-->
+          <!--            <p>-->
+          <!--              Lorem Ipsum is simply dummy text of the printing and typesetting industry.-->
+          <!--              Lorem Ipsum has been the industry's standard dummy text ever since the-->
+          <!--              1500s, when an unknown printer took a galley of type and scrambled it to-->
+          <!--              make a type specimen book. It has survived not only five centuries, but also-->
+          <!--              the leap into electronic typesetting, remaining essentially unchanged.-->
+          <!--            </p>-->
+          <!--          </header>-->
+          <!--          <p>Current Mode: {{ currentMode | uppercase }}</p>-->
+
+          <router-outlet></router-outlet>
+        </div>
+      </nz-content>
+    </nz-layout>
+  </nz-layout>
+</div>
+

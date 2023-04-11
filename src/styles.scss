@@ -80,3 +80,137 @@ p {
 .carousel-image {
   max-height: 750px;
 }
+
+/*
+  APPLICATION STYLES
+*/
+
+.app-container{
+  position: relative;
+  max-height: 100vh;
+  min-height: 100vh;
+}
+
+/* Application Layout Formatting */
+.ant-layout {
+  min-height: 100vh;
+  max-height: 100vh;
+  background: var(--bgColor);
+}
+
+.inner-content {
+  max-height: calc( 100vh - 118px );
+  min-height: calc( 100vh - 118px );
+  overflow:auto;
+  overflow-x: hidden;
+  /*padding: 50px 30px;*/
+}
+
+.ant-layout-sider {
+  background: var(--sideNavBg);
+  border-radius: 30px;
+  margin: 30px;
+  /*margin-top: 60px;*/
+  /*margin-bottom: 60px;*/
+}
+
+.ant-layout-sider-trigger {
+  border-radius: 0px 0px 50px 0px;
+  background: transparent;
+  color: $lime9-light;
+}
+
+.side-bar-logo {
+  padding: 50px 25px 25px 25px;
+}
+
+.logo-nav {
+  max-width: 125px;
+}
+
+.logo-nav-sm {
+  max-width: 40px;
+}
+
+nz-sider {
+  /*border-radius: 0px 50px 50px 0px;*/
+  box-shadow: 0 0 10px 0 rgba(0,0,0,.05);
+  transition-duration: 5s;
+  /* So side-nav is on top of the top nav bar */
+  position: relative;
+  z-index: 2000;
+}
+
+.desktop-sider {
+  position: absolute;
+  right: -8px;
+  top: 40vh;
+  background-color: var(--sideNavBg);
+  transition-duration: 0.5s;
+  border-radius: 50%;
+  width: 50px;
+  color: var(--textColor);
+  height: 50px;
+}
+
+.desktop-sider:hover{
+  cursor: pointer;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.05);
+}
+
+.ant-menu.ant-menu-dark, .ant-menu-dark .ant-menu-sub, .ant-menu.ant-menu-dark .ant-menu-sub {
+  background: transparent;
+  color: var(--textColor);
+  max-height: calc(100vh - 400px );
+  overflow: auto;
+}
+
+.ant-menu-dark .ant-menu-item, .ant-menu-dark .ant-menu-item-group-title, .ant-menu-dark .ant-menu-item > a, .ant-menu-dark .ant-menu-item > span > a {
+  color: var(--textColor);
+  font-size: 14px;
+}
+
+.ant-menu-dark .ant-menu-item:hover, .ant-menu-dark .ant-menu-item-active, .ant-menu-dark .ant-menu-submenu-active, .ant-menu-dark .ant-menu-submenu-open, .ant-menu-dark .ant-menu-submenu-selected, .ant-menu-dark .ant-menu-submenu-title:hover {
+  color: var(--primary-dark);
+}
+
+.ant-menu-dark.ant-menu-dark:not(.ant-menu-horizontal) .ant-menu-item-selected {
+  color: $lime9-light;
+  background-color: transparent;
+  font-weight: 500;
+}
+
+.ant-menu-item-selected > span {
+  color: var(--secondary) !important;
+}
+
+.ant-menu-dark .ant-menu-item-selected .ant-menu-item-icon, .ant-menu-dark .ant-menu-item-selected .anticon {
+  color: var(--primary-dark);
+}
+
+.ant-menu-dark .ant-menu-item-selected .ant-menu-item-icon + span, .ant-menu-dark .ant-menu-item-selected .anticon + span {
+  color: var(--primary-dark);
+  font-weight: 500;
+}
+
+.ant-menu-item-selected:after {
+  content: "";
+  position: absolute;
+  left: -4px;
+  top: 0;
+  width: 10px;
+  height: 100%;
+  background: $lime9-light;
+  border-radius: 0px 20px 20px 0px;
+  transition: all .25s ease;
+  z-index: 60;
+}
+
+/* Nav Arrow */
+.ant-menu-dark .ant-menu-item:hover > .ant-menu-submenu-title > .ant-menu-submenu-arrow::after, .ant-menu-dark .ant-menu-item-active > .ant-menu-submenu-title > .ant-menu-submenu-arrow::after, .ant-menu-dark .ant-menu-submenu-active > .ant-menu-submenu-title > .ant-menu-submenu-arrow::after, .ant-menu-dark .ant-menu-submenu-open > .ant-menu-submenu-title > .ant-menu-submenu-arrow::after, .ant-menu-dark .ant-menu-submenu-selected > .ant-menu-submenu-title > .ant-menu-submenu-arrow::after, .ant-menu-dark .ant-menu-submenu-title:hover > .ant-menu-submenu-title > .ant-menu-submenu-arrow::after, .ant-menu-dark .ant-menu-item:hover > .ant-menu-submenu-title > .ant-menu-submenu-arrow::before, .ant-menu-dark .ant-menu-item-active > .ant-menu-submenu-title > .ant-menu-submenu-arrow::before, .ant-menu-dark .ant-menu-submenu-active > .ant-menu-submenu-title > .ant-menu-submenu-arrow::before, .ant-menu-dark .ant-menu-submenu-open > .ant-menu-submenu-title > .ant-menu-submenu-arrow::before, .ant-menu-dark .ant-menu-submenu-selected > .ant-menu-submenu-title > .ant-menu-submenu-arrow::before, .ant-menu-dark .ant-menu-submenu-title:hover > .ant-menu-submenu-title > .ant-menu-submenu-arrow::before {
+  background: $lime9-light;
+}
+
+.ant-menu.ant-menu-dark .ant-menu-submenu-title .ant-menu-submenu-arrow::after, .ant-menu-dark .ant-menu-sub .ant-menu-submenu-title .ant-menu-submenu-arrow::after, .ant-menu.ant-menu-dark .ant-menu-sub .ant-menu-submenu-title .ant-menu-submenu-arrow::after, .ant-menu.ant-menu-dark .ant-menu-submenu-title .ant-menu-submenu-arrow::before, .ant-menu-dark .ant-menu-sub .ant-menu-submenu-title .ant-menu-submenu-arrow::before, .ant-menu.ant-menu-dark .ant-menu-sub .ant-menu-submenu-title .ant-menu-submenu-arrow::before {
+  background: $lime9-light;
+}

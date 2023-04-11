@@ -49,7 +49,9 @@
                 </div>
               </div>
               <div class="mt-5">
-                <button nz-button class="login-form-button login-form-margin auth-button" [nzType]="'primary'">Log in</button>
+                <button nz-button type='button' class="login-form-button login-form-margin auth-button" [nzType]="'primary'" (click)="login()">
+                  Log in
+                </button>
               </div>
             </form>
             <div class="mt-5">
