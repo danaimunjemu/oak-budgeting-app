@@ -7,8 +7,8 @@
 
     <nz-sider nzCollapsible nzWidth="250px" nzBreakpoint="lg" [nzTrigger]="null" [(nzCollapsed)]="isCollapsed">
       <div class="side-bar-logo d-flex justify-content-center" style="height: 115px">
-        <img src="/assets/images/AFC.png" alt="" class="logo-nav-sm" [hidden]="!isCollapsed">
-        <img src="/assets/images/logo-full.png" alt="" class="logo-nav" [hidden]="isCollapsed">
+        <img src="/assets/images/oak-logo.png" alt="" class="logo-nav-sm" [hidden]="!isCollapsed">
+        <img src="/assets/images/oak-logo-full.png" alt="" class="logo-nav" [hidden]="isCollapsed">
       </div>
       <div id="parent">
         <div class="desktop-sider d-flex justify-content-center align-items-center" (click)="isCollapsed = !isCollapsed">
@@ -20,6 +20,7 @@
         </div>
         <div class="menu-items">
           <ul nz-menu nzTheme="dark" nzMode="inline">
+            <h5>Main</h5>
             <li nz-menu-item routerLink="/agency/agency/dashboard" routerLinkActive="ant-menu-item-selected">
               <span nz-icon nzType="dashboard"></span>
               <span>Dashboard</span>
@@ -28,6 +29,7 @@
               <span nz-icon nzType="bank"></span>
               <span>Banking</span>
             </li>
+            <h5>My Profile</h5>
             <li nz-menu-item routerLink="/agency/agency/guide" routerLinkActive="ant-menu-item-selected">
               <span nz-icon nzType="bulb"></span>
               <span>Guide</span>

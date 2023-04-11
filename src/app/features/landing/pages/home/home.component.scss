@@ -1,2 +1,42 @@
 @import "../../../../../assets/styles/colours";
 
+.navbar {
+  background-color: $slate1-light;
+}
+
+.nav-item {
+  font-family: Poppins, sans-serif;
+}
+
+.main-home-area {
+  min-height: calc( 100vh - 82px );
+  max-height: calc( 100vh - 82px );
+  height: 100%;
+  background: $slate1-light;
+}
+
+.hero-left {
+  padding-left: 75px;
+}
+
+.hero-carousel {
+  height: calc( 100vh - 162.5px );
+}
+
+.banner {
+  background-color: $lime4-light;
+  text-align: center;
+  padding: 25px 0px;
+}
+
+.banner-text {
+  margin-bottom: unset;
+  color: $lime11-light;
+  font-size: 25px;
+  font-family: Quicksand, sans-serif;
+}
+
+.banner-text-emphasis {
+  font-family: Quicksand-SemiBold, sans-serif;
+  color: $lime12-light;
+}
