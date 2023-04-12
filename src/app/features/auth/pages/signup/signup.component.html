@@ -1,1 +1,64 @@
-<p>signup works!</p>
+<div class="auth-container">
+  <div class="row">
+    <div class="col-lg-6 auth-element d-flex align-items-center justify-content-center">
+      <img src="/assets/images/sign-up.svg" alt="" style="max-width: 750px">
+    </div>
+    <div class="col-lg-6 auth-element d-flex align-items-center justify-content-center">
+      <div>
+        <div style="text-align: center" class="mb-5">
+          <h1 class="auth-heading">Hey there!</h1>
+          <p class="auth-paragraph">
+            Welcome to Oak! Please sign up to begin your journey
+          </p>
+        </div>
+        <div class="mb-3">
+          <button nz-button nzType="default" style="width: 100%">
+            <img src="/assets/images/logos/google-logo.webp" style="max-width: 20px; margin-right: 10px" alt="">
+            Sign up with Google
+          </button>
+        </div>
+        <div style="text-align: center">
+          <p class="auth-paragraph">
+            or
+          </p>
+        </div>
+        <div class="auth-form-area mt-3">
+          <form nz-form class="login-form">
+            <nz-form-item>
+              <nz-form-control nzErrorTip="Please input your username!">
+                <nz-input-group nzPrefixIcon="user">
+                  <input type="text" nz-input formControlName="userName" placeholder="Username" />
+                </nz-input-group>
+              </nz-form-control>
+            </nz-form-item>
+            <nz-form-item>
+              <nz-form-control nzErrorTip="Please input your Password!">
+                <nz-input-group nzPrefixIcon="lock">
+                  <input type="password" nz-input formControlName="password" placeholder="Password" />
+                </nz-input-group>
+              </nz-form-control>
+            </nz-form-item>
+            <div nz-row class="login-form-margin">
+              <div nz-col [nzSpan]="12">
+                <label nz-checkbox formControlName="remember">
+                  <span>Remember me</span>
+                </label>
+              </div>
+              <div nz-col [nzSpan]="12" style="text-align: right">
+                <a class="login-form-forgot">Forgot password</a>
+              </div>
+            </div>
+            <div class="mt-5">
+              <button nz-button type='button' class="login-form-button login-form-margin auth-button" [nzType]="'primary'" (click)="signup()">
+                Sign up
+              </button>
+            </div>
+          </form>
+          <div class="mt-5">
+            <p>Already have an account yet? <a routerLink="../login">Log in</a> to continue</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

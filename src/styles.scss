@@ -19,9 +19,15 @@ p {
   font-family: Poppins, sans-serif;
 }
 
+.ant-btn {
+  //font-family: Quicksand-SemiBold, sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
 //  HERO SECTION
 .hero-heading {
   font-size: 50px;
+  color: $lime9-light;
 }
 
 .hero-paragraph {
