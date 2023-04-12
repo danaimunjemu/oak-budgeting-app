@@ -14,7 +14,8 @@ body.light {
 
 //  HEADINGS
 h1, h2, h3, h4, h5, h6 {
-  font-family: Quicksand-Bold, sans-serif;
+  font-family: Quicksand, sans-serif;
+  font-weight: 700;
 }
 
 p {
@@ -22,7 +23,6 @@ p {
 }
 
 .ant-btn {
-  //font-family: Quicksand-SemiBold, sans-serif;
   font-family: "Poppins", sans-serif;
 }
 
@@ -78,7 +78,8 @@ p {
 }
 
 .auth-heading {
-  font-family: Quicksand-SemiBold, sans-serif;
+  font-family: Quicksand, sans-serif;
+  font-weight: 600;
 }
 
 .auth-paragraph {
@@ -97,7 +98,8 @@ p {
 //  NAVBAR
 .navbar-brand {
   color: #{$lime9-light};
-  font-family: Quicksand-Bold, sans-serif;
+  font-family: Quicksand, sans-serif;
+  font-weight: 700;
   font-size: 32px;
 }
 
