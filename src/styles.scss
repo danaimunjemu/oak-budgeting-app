@@ -2,7 +2,7 @@
 @import "assets/theme/light-theme";
 @import "assets/theme/dark-theme";
 @import "assets/styles/bootstrap-styles";
-@import "assets/styles/media-queries";
+
 
 //  Dark and Light Mode
 body.dark {
@@ -255,3 +255,5 @@ nz-sider {
   -webkit-transform: skew(0deg,-2.5deg);
   transform: skew(0deg,-2.5deg);
 }
+
+@import "assets/styles/media-queries";
