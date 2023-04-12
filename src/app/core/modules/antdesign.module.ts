@@ -30,6 +30,8 @@ import { NzCollapseModule } from 'ng-zorro-antd/collapse';
 import { NzDrawerModule } from 'ng-zorro-antd/drawer';
 import { NzCheckboxModule } from 'ng-zorro-antd/checkbox';
 import { NzSwitchModule } from 'ng-zorro-antd/switch';
+import { NzCardModule } from 'ng-zorro-antd/card';
+
 
 const modules = [
   NzButtonModule,
@@ -62,7 +64,8 @@ const modules = [
   NzCollapseModule,
   NzDrawerModule,
   NzCheckboxModule,
-  NzSwitchModule
+  NzSwitchModule,
+  NzCardModule
 ];
 
 @NgModule({

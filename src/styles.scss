@@ -1,6 +1,8 @@
 @import "assets/styles/colours";
 @import "assets/theme/light-theme";
 @import "assets/theme/dark-theme";
+@import "assets/styles/bootstrap-styles";
+@import "assets/styles/media-queries";
 
 //  Dark and Light Mode
 body.dark {
@@ -32,6 +34,23 @@ p {
 
 .hero-paragraph {
   font-size: 24px;
+  color: $slate9-light;
+  padding-bottom: 25px;
+}
+
+.carousel-indicators [data-bs-target] {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: $slate9-light;
+}
+
+.carousel-indicators .active {
+  background-color: $lime6-light !important;
+}
+
+.carousel-indicators {
+  bottom: -40px;
 }
 
 .bg {
@@ -84,7 +103,7 @@ p {
 
 //  CAROUSEL
 .carousel-image {
-  max-height: 750px;
+  max-height: 600px;
 }
 
 /*
@@ -219,4 +238,20 @@ nz-sider {
 
 .ant-menu.ant-menu-dark .ant-menu-submenu-title .ant-menu-submenu-arrow::after, .ant-menu-dark .ant-menu-sub .ant-menu-submenu-title .ant-menu-submenu-arrow::after, .ant-menu.ant-menu-dark .ant-menu-sub .ant-menu-submenu-title .ant-menu-submenu-arrow::after, .ant-menu.ant-menu-dark .ant-menu-submenu-title .ant-menu-submenu-arrow::before, .ant-menu-dark .ant-menu-sub .ant-menu-submenu-title .ant-menu-submenu-arrow::before, .ant-menu.ant-menu-dark .ant-menu-sub .ant-menu-submenu-title .ant-menu-submenu-arrow::before {
   background: $lime9-light;
+}
+
+
+.bg-sky-violet {
+  background: var(--sky);
+  background: linear-gradient(160deg, $lime9-light 0%,$yellow9-light 100%);
+  padding: 20px;
+  color: $lime11-light;
+  font-size: 25px;
+  font-family: Quicksand, sans-serif;
+  text-align: center;
+}
+
+.skew-left {
+  -webkit-transform: skew(0deg,-2.5deg);
+  transform: skew(0deg,-2.5deg);
 }

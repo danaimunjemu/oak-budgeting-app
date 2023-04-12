@@ -1,83 +1,84 @@
-<nav class="navbar navbar-expand-lg">
+<div class="home">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">oak</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="-9 -2 24 24" width="24" fill="currentColor"><path d="M3 6a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 14a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"></path></svg>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Product</a>
+          </li>
+        </ul>
+        <div class="d-flex">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">login</a>
+            </li>
+          </ul>
+          <button nz-button nzType="primary" routerLink="../../auth">Get Started</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="main-home-area">
+    <div>
+      <div class="row hero-carousel mb-5">
+        <div class="col-xl-4 d-flex align-items-center hero-left">
+          <div>
+            <h1 class="hero-heading">
+              Manage your personal finance and grow your net worth
+            </h1>
+            <p class="hero-paragraph">
+              Oak helps you to stay on top of your spending habits and helps you plan your finances.
+            </p>
+            <button nz-button nzType="primary" routerLink="../../auth/signup">Plant your oaknut</button>
+          </div>
+
+
+        </div>
+        <div class="col-xl-8 align-self-center">
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="5000">
+                <img src="/assets/images/tree-house-amico.svg" class="d-block w-100 carousel-image" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <img src="/assets/images/plain-credit-card-pana.svg" class="d-block w-100 carousel-image" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <img src="/assets/images/saving-money-cuate.svg" class="d-block w-100 carousel-image" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <svg class="hero-carousel-control" xmlns="http://www.w3.org/2000/svg" viewBox="-8 -5 24 24" width="24" fill="currentColor"><path d="M2.757 7l4.95 4.95a1 1 0 1 1-1.414 1.414L.636 7.707a1 1 0 0 1 0-1.414L6.293.636A1 1 0 0 1 7.707 2.05L2.757 7z"></path></svg>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <svg class="hero-carousel-control" xmlns="http://www.w3.org/2000/svg" viewBox="-8 -5 24 24" width="24" fill="currentColor"><path d="M5.314 7.071l-4.95-4.95A1 1 0 0 1 1.778.707l5.657 5.657a1 1 0 0 1 0 1.414l-5.657 5.657a1 1 0 0 1-1.414-1.414l4.95-4.95z"></path></svg>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">oak</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Services</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Product</a>
-        </li>
-      </ul>
-      <div class="d-flex">
-        <button nz-button nzType="primary" routerLink="../../auth">Get Started</button>
-      </div>
-    </div>
-  </div>
-</nav>
-
-<div class="main-home-area">
-  <div class="container">
-    <div class="row hero-carousel">
-      <div class="col-xl-4 d-flex align-items-center hero-left">
-        <div>
-          <h1 class="hero-heading">
-            Manage your personal finance and grow your net worth
-          </h1>
-          <p class="hero-paragraph">
-            Oak helps you to stay on top of your spending habits and helps you plan your finances.
-          </p>
-          <button nz-button nzType="primary" routerLink="../../auth/signup">Plant your oaknut</button>
-        </div>
-
-
-      </div>
-      <div class="col-xl-8">
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="5000">
-              <img src="/assets/images/tree-house-amico.svg" class="d-block w-100 carousel-image" alt="...">
-            </div>
-            <div class="carousel-item" data-bs-interval="5000">
-              <img src="/assets/images/plain-credit-card-pana.svg" class="d-block w-100 carousel-image" alt="...">
-            </div>
-            <div class="carousel-item" data-bs-interval="5000">
-              <img src="/assets/images/saving-money-cuate.svg" class="d-block w-100 carousel-image" alt="...">
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="row d-flex align-items-baseline">
-    <div class="banner">
-      <p class="banner-text"> We help you plant the first seed for your first <span class="banner-text-emphasis">oak</span> ! </p>
-    </div>
+    <h2 class="skew-left bg-sky-violet">
+      We help you plant the first seed for your first <span class="banner-text-emphasis">oak</span>
+    </h2>
   </div>
 </div>
-
-
-
-
