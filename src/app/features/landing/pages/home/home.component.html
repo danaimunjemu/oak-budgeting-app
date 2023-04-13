@@ -8,22 +8,22 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">About</a>
+            <a class="nav-link active" aria-current="page" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Services</a>
+            <a class="nav-link active" aria-current="page" href="#services">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Product</a>
+            <a class="nav-link active" aria-current="page" href="#product">Product</a>
           </li>
         </ul>
         <div class="d-flex">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">login</a>
+            <li class="nav-item d-flex align-items-center" style="margin-right: 20px">
+              <a class="nav-link active" aria-current="page" routerLink="../../auth/login">Login</a>
             </li>
           </ul>
-          <button nz-button nzType="primary" routerLink="../../auth">Get Started</button>
+          <button nz-button nzType="primary" routerLink="../../auth/signup">Get Started</button>
         </div>
       </div>
     </div>
@@ -35,7 +35,7 @@
         <div class="col-xl-4 d-flex align-items-center hero-left">
           <div>
             <h1 class="hero-heading">
-              Manage your personal finance and grow your net worth
+              Your personal finance manager
             </h1>
             <p class="hero-paragraph">
               Oak helps you to stay on top of your spending habits and helps you plan your finances.
@@ -76,9 +76,22 @@
       </div>
     </div>
   </div>
-  <div class="container-fluid">
+  <div class="container-fluid mb-5">
     <h2 class="skew-left bg-sky-violet">
       We help you plant the first seed for your first <span class="banner-text-emphasis">oak</span>
     </h2>
   </div>
+</div>
+
+
+<div id="about">
+  About
+</div>
+
+<div id="services">
+  Services
+</div>
+
+<div id="product">
+  Product
 </div>

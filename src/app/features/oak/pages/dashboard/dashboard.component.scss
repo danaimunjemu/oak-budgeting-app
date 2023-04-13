@@ -1,0 +1,36 @@
+@import "../../../../../assets/styles/colours.scss";
+
+.summary-cards {
+  background: #FFFFFF;
+  box-shadow: 0px 18px 32px rgba(208, 210, 218, 0.15);
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.summary-item {
+  padding-left: 10px;
+}
+
+.summary-img {
+  min-width: 100px;
+}
+
+.element {
+  display: inline-block;
+}
+
+.summary-heading{
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: $slate8-light;
+}
+
+.summary-detail {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  color: $slate12-light;
+}

@@ -1,1 +1,82 @@
-<p>dashboard works!</p>
+<!--<div class="row">-->
+  <nz-select class="dashboard-select" nzShowSearch nzAllowClear nzPlaceHolder="Search" [(ngModel)]="selectedValue">
+    <nz-option nzLabel="Jack" nzValue="jack"></nz-option>
+    <nz-option nzLabel="Lucy" nzValue="lucy"></nz-option>
+    <nz-option nzLabel="Tom" nzValue="tom"></nz-option>
+  </nz-select>
+<!--</div>-->
+
+<div class="spacer-xl"></div>
+
+<div class="row">
+  <div class="col-lg-9">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="summary-cards">
+          <div class="element">
+            <div class="summary-img">
+              <img src="/assets/images/savings-pana.svg" alt="">
+            </div>
+          </div>
+          <div class="element">
+            <div class="summary-item">
+              <h5 class="summary-heading">Income</h5>
+              <p class="summary-detail">$5,000</p>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="summary-cards">
+          <div class="element">
+            <div class="summary-img">
+              <img src="/assets/images/plain-credit-card-pana.svg" alt="">
+            </div>
+          </div>
+          <div class="element">
+            <div class="summary-item">
+              <h5 class="summary-heading">Expenses</h5>
+              <p class="summary-detail">$450</p>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="summary-cards">
+          <div class="element">
+            <div class="summary-img">
+              <img src="/assets/images/saving-money-cuate.svg" alt="">
+            </div>
+          </div>
+          <div class="element">
+            <div class="summary-item">
+              <h5 class="summary-heading">Savings</h5>
+              <p class="summary-detail">$5,000</p>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+    <div class="spacer-xl"></div>
+    <div class="row">
+      <div class="summary-cards">
+        <div style="padding: 20px">
+          <div id="income-graph"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-3">
+    <div class="summary-cards">
+      Goals
+    </div>
+  </div>
+</div>
+
+

@@ -23,7 +23,9 @@ p {
 }
 
 .ant-btn {
-  font-family: "Poppins", sans-serif;
+  font-family: Quicksand, sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
 }
 
 //  HERO SECTION
@@ -130,15 +132,11 @@ p {
   min-height: calc( 100vh - 118px );
   overflow:auto;
   overflow-x: hidden;
-  /*padding: 50px 30px;*/
+  padding: 20px;
 }
 
 .ant-layout-sider {
   background: var(--sideNavBg);
-  border-radius: 30px;
-  margin: 30px;
-  /*margin-top: 60px;*/
-  /*margin-bottom: 60px;*/
 }
 
 .ant-layout-sider-trigger {
@@ -148,20 +146,19 @@ p {
 }
 
 .side-bar-logo {
-  padding: 50px 25px 25px 25px;
+  padding: 30px 25px 25px 25px;
 }
 
 .logo-nav {
-  max-width: 125px;
+  //width: 75px;
+  //height: auto;
 }
 
 .logo-nav-sm {
-  max-width: 40px;
+  //max-width: 40px;
 }
 
 nz-sider {
-  /*border-radius: 0px 50px 50px 0px;*/
-  box-shadow: 0 0 10px 0 rgba(0,0,0,.05);
   transition-duration: 5s;
   /* So side-nav is on top of the top nav bar */
   position: relative;
@@ -259,3 +256,78 @@ nz-sider {
 }
 
 @import "assets/styles/media-queries";
+
+.mode-toggler {
+  padding-right: 20px;
+}
+
+.dark-mode-toggle-icon {
+  max-width: 15px;
+}
+
+.dashboard-avatar {
+  min-width: 50px;
+  min-height: 50px;
+}
+
+.dashboard-user-details {
+  margin-left: 10px;
+}
+
+.dashboard-username {
+  color: $slate11-light;
+  font-size: 14px;
+  font-family: Quicksand, sans-serif;
+  font-weight: 900;
+}
+
+.dashboard-email {
+  color: $slate10-light;
+  font-size: 12px;
+  font-family: Poppins, sans-serif;
+}
+
+.side-nav-menu-items {
+  padding: 25px;
+}
+
+.side-nav-header {
+  font-size: 18px;
+  font-family: Quicksand, sans-serif;
+  color: $slate11-light;
+}
+
+.side-nav-item {
+  font-family: Quicksand, sans-serif;
+  font-weight: 500;
+}
+
+.spacer-xs {
+  margin-top: 5px;
+}
+
+.spacer-sm {
+  margin-top: 10px;
+}
+
+.spacer-md {
+  margin-top: 15px;
+}
+
+.spacer-lg {
+  margin-top: 25px;
+}
+
+.spacer-xl {
+  margin-top: 50px;
+}
+
+/*
+  NG ZORRO STYLES
+ */
+
+.ant-select:not(.ant-select-customize-input) .ant-select-selector{
+  min-width: 300px;
+  background-color: $slate3-light;
+  border: 1px solid $slate3-light;
+}
