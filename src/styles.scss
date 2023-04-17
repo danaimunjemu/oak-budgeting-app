@@ -12,6 +12,31 @@ body.light {
   @include lighten();
 }
 
+/* Scroll Bar Styling */
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: transparent;
+  border-radius: 8px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $lime9-light;
+  border-radius: 8px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $lime10-light;
+}
+
 //  HEADINGS
 h1, h2, h3, h4, h5, h6 {
   font-family: Quicksand, sans-serif;
@@ -185,7 +210,6 @@ nz-sider {
 .ant-menu.ant-menu-dark, .ant-menu-dark .ant-menu-sub, .ant-menu.ant-menu-dark .ant-menu-sub {
   background: transparent;
   color: var(--textColor);
-  max-height: calc(100vh - 400px );
   overflow: auto;
 }
 
@@ -270,6 +294,10 @@ nz-sider {
   min-height: 50px;
 }
 
+.dashboard-avatar:hover{
+  cursor: pointer;
+}
+
 .dashboard-user-details {
   margin-left: 10px;
 }
@@ -285,6 +313,26 @@ nz-sider {
   color: $slate10-light;
   font-size: 12px;
   font-family: Poppins, sans-serif;
+}
+
+.dashboard-dropdown-icon {
+  margin-right: 10px;
+}
+
+.dashboard-card-header {
+  font-family: 'Quicksand', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.side-nav-avatar {
+  min-width: 50px;
+  min-height: 50px;
+}
+
+.side-nav-username {
+  text-align: center;
 }
 
 .side-nav-menu-items {
@@ -328,6 +376,74 @@ nz-sider {
 
 .ant-select:not(.ant-select-customize-input) .ant-select-selector{
   min-width: 300px;
-  background-color: $slate3-light;
-  border: 1px solid $slate3-light;
+  background-color: var(--formInput);
+  border: 1px solid var(--formInput);
+}
+
+/*
+  GLOBAL STYLES
+ */
+
+.summary-cards {
+  background: var(--card);
+  box-shadow: 0px 18px 32px var(--cardShadow);
+  border-radius: 8px;
+  padding: 10px;
+}
+
+canvas {
+  width: -webkit-fill-available !important;
+}
+
+.goal-row {
+  margin: 10px 0px;
+  border-radius: 8px;
+  transition-duration: 0.5s;
+}
+
+.goal-row:hover {
+  cursor: pointer;
+  background: $slate3-light;
+}
+
+.goal-img {
+  min-width: 40px;
+}
+
+.goal-meta-data {
+  margin-left: 10px;
+}
+
+.goal-heading {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  color: $slate12-light;
+}
+
+.goal-description {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  color: $slate10-light;
+}
+
+.goal-amount {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  color: $slate12-light;
+  text-align: end;
+  align-self: center;
+}
+
+.transaction-expense {
+  color: $red9-light;
+}
+
+.transaction-income {
+  color: $grass9-light;
 }

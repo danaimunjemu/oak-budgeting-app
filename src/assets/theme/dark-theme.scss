@@ -2,8 +2,15 @@
 
 // mixin that enables css variables in dark mode
 @mixin darken() {
-  --sideNavBg: #{$slate6-dark};
-  --bgColor: #{$slate5-dark};
+  //--sideNavBg: #{$slate6-dark};
+  --sideNavBg: #182b3c;
+  //--card: #{$slate6-dark};
+  --card: #182b3c;
+  //--cardShadow: rgba(74, 74, 74, 0.15);
+  --cardShadow: rgba(74, 74, 74, 0);
+  //--bgColor: #{$slate5-dark};
+  --bgColor: #122333;
   --textColor: #{$slate12-dark};
   --borderColor: #{$slate12-dark};
+  --formInput: #182b3c;
 }

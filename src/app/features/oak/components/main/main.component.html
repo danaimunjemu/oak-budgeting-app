@@ -18,6 +18,10 @@
                   [nzType]="isCollapsed ? 'right-circle' : 'left-circle'"
                 ></span>
         </div>
+
+
+
+
         <div class="menu-items">
           <ul nz-menu nzTheme="dark" nzMode="inline" class="side-nav-menu-items">
             <div class="spacer-xl"></div>
@@ -101,12 +105,30 @@
                 <svg class="dark-mode-toggle-icon" xmlns="http://www.w3.org/2000/svg" viewBox="-4 -2 24 24" width="24" fill="currentColor"><path d="M12.253.335A10.086 10.086 0 0 0 8.768 8c0 4.632 3.068 8.528 7.232 9.665A9.555 9.555 0 0 1 9.742 20C4.362 20 0 15.523 0 10S4.362 0 9.742 0c.868 0 1.71.117 2.511.335z"></path></svg>
               </ng-template>
               </span>
+                <nz-avatar class="dashboard-avatar" nzIcon="user" nzSrc="/assets/icons/avatar/reshot-icon-business-6NGAEK5WB9.svg" nz-dropdown [nzDropdownMenu]="menu"></nz-avatar>
+                <span class="dashboard-user-details">
+                  <span class="dashboard-username">Kode Kenzi </span><br>
+                  <span class="dashboard-email">kenzi.kode@google.com</span>
+                </span>
 
-              <nz-avatar class="dashboard-avatar" nzIcon="user" nzSrc="/assets/icons/avatar/reshot-icon-business-6NGAEK5WB9.svg"></nz-avatar>
-              <span class="dashboard-user-details">
-                <span class="dashboard-username">Kode Kenzi </span><br>
-                <span class="dashboard-email">kenzi.kode@google.com</span>
-              </span>
+<!--                <span nz-icon nzType="down"></span>-->
+              <nz-dropdown-menu #menu="nzDropdownMenu">
+                <ul nz-menu nzSelectable>
+                  <li nz-menu-item >
+                    <div class="d-flex justify-content-center">
+                      <div class="side-nav-user">
+                        <nz-avatar class="side-nav-avatar" nzIcon="user" nzSrc="/assets/icons/avatar/reshot-icon-business-6NGAEK5WB9.svg"></nz-avatar>
+<!--                        <span class="side-nav-user-details">-->
+<!--                          <span class="dashboard-username side-nav-username">Kode Kenzi </span><br>-->
+<!--                        </span>-->
+                      </div>
+                    </div>
+                  </li>
+                  <li nz-menu-item routerLink="settings"><span class="dashboard-dropdown-icon" nz-icon nzType="setting"></span>Account Settings</li>
+                  <li nz-menu-item (click)="logout()"><span class="dashboard-dropdown-icon" nz-icon nzType="poweroff"></span>Logout</li>
+                </ul>
+              </nz-dropdown-menu>
+
 
 
 

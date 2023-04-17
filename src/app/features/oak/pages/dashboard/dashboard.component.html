@@ -12,7 +12,7 @@
   <div class="col-lg-9">
     <div class="row">
       <div class="col-md-4">
-        <div class="summary-cards">
+        <div class="summary-cards mb-3">
           <div class="element">
             <div class="summary-img">
               <img src="/assets/images/savings-pana.svg" alt="">
@@ -29,7 +29,7 @@
         </div>
       </div>
       <div class="col-md-4">
-        <div class="summary-cards">
+        <div class="summary-cards mb-3">
           <div class="element">
             <div class="summary-img">
               <img src="/assets/images/plain-credit-card-pana.svg" alt="">
@@ -46,7 +46,7 @@
         </div>
       </div>
       <div class="col-md-4">
-        <div class="summary-cards">
+        <div class="summary-cards mb-3">
           <div class="element">
             <div class="summary-img">
               <img src="/assets/images/saving-money-cuate.svg" alt="">
@@ -65,16 +65,134 @@
     </div>
     <div class="spacer-xl"></div>
     <div class="row">
-      <div class="summary-cards">
-        <div style="padding: 20px">
-          <div id="income-graph"></div>
+      <div class="col">
+        <div class="summary-cards mb-3">
+          <div style="padding: 20px">
+            <div id="income-graph"></div>
+          </div>
         </div>
       </div>
     </div>
   </div>
   <div class="col-lg-3">
     <div class="summary-cards">
-      Goals
+      <h3 class="dashboard-card-header">Goals</h3>
+      <div routerLink="../goals" class="goal-row">
+        <div class="d-flex bd-highlight">
+          <div class="p-2 bd-highlight">
+            <img src="/assets/icons/car_auto_parts/reshot-icon-electric-car-Y8TGPU3RB7.svg" alt="" class="goal-img">
+          </div>
+          <div class="p-2 bd-highlight">
+            <div class="goal-meta-data">
+              <span class="goal-heading">Car</span><br>
+              <span class="goal-description">Get a car by August</span>
+            </div>
+          </div>
+          <div class="p-2 flex-grow-1 bd-highlight goal-amount">
+            $3,500
+          </div>
+        </div>
+      </div>
+      <div routerLink="../goals" class="goal-row">
+        <div class="d-flex bd-highlight">
+          <div class="p-2 bd-highlight">
+            <img src="/assets/icons/network/reshot-icon-laptop-F9PG2QE6AB.svg" alt="" class="goal-img">
+          </div>
+          <div class="p-2 bd-highlight">
+            <div class="goal-meta-data">
+              <span class="goal-heading">Home Wi-Fi</span><br>
+              <span class="goal-description">Save up for Starlink</span>
+            </div>
+          </div>
+          <div class="p-2 flex-grow-1 bd-highlight goal-amount">
+            $600
+          </div>
+        </div>
+      </div>
+      <div routerLink="../goals" class="goal-row">
+        <div class="d-flex bd-highlight">
+          <div class="p-2 bd-highlight">
+            <img src="/assets/icons/hotel/reshot-icon-hotel-building-DG7Z6YSB9N.svg" alt="" class="goal-img">
+          </div>
+          <div class="p-2 bd-highlight">
+            <div class="goal-meta-data">
+              <span class="goal-heading">Stand</span><br>
+              <span class="goal-description">Pay for a stand</span>
+            </div>
+          </div>
+          <div class="p-2 flex-grow-1 bd-highlight goal-amount">
+            $15,000
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="spacer-lg"></div>
+    <div class="summary-cards">
+      <h3 class="dashboard-card-header">Transactions</h3>
+      <div routerLink="../goals" class="goal-row">
+        <div class="d-flex bd-highlight">
+          <div class="p-2 bd-highlight">
+            <img src="/assets/icons/car_auto_parts/reshot-icon-refueling-tank-VS4R8EUZJ6.svg" alt="" class="goal-img">
+          </div>
+          <div class="p-2 bd-highlight">
+            <div class="goal-meta-data">
+              <span class="goal-heading">Fuel</span><br>
+              <span class="goal-description">- $30.00</span>
+            </div>
+          </div>
+          <div class="p-2 flex-grow-1 bd-highlight goal-amount">
+            <svg class="transaction-expense" xmlns="http://www.w3.org/2000/svg" viewBox="-5 -4.5 24 24" width="24" fill="currentColor"><path d="M8 11.243l3.95-3.95a1 1 0 1 1 1.414 1.414l-5.657 5.657a.997.997 0 0 1-1.414 0L.636 8.707A1 1 0 1 1 2.05 7.293L6 11.243V1.657a1 1 0 1 1 2 0v9.586z"></path></svg>
+          </div>
+        </div>
+      </div>
+      <div routerLink="../goals" class="goal-row">
+        <div class="d-flex bd-highlight">
+          <div class="p-2 bd-highlight">
+            <img src="/assets/icons/money/reshot-icon-money-and-coins-NDTSLBCXH5.svg" alt="" class="goal-img">
+          </div>
+          <div class="p-2 bd-highlight">
+            <div class="goal-meta-data">
+              <span class="goal-heading">Salary</span><br>
+              <span class="goal-description">+ $1,600</span>
+            </div>
+          </div>
+          <div class="p-2 flex-grow-1 bd-highlight goal-amount">
+            <svg class="transaction-income" xmlns="http://www.w3.org/2000/svg" viewBox="-5 -4.5 24 24" width="24" fill="currentColor"><path d="M6 4.071l-3.95 3.95A1 1 0 0 1 .636 6.607L6.293.95a.997.997 0 0 1 1.414 0l5.657 5.657A1 1 0 0 1 11.95 8.02L8 4.07v9.586a1 1 0 1 1-2 0V4.07z"></path></svg>
+          </div>
+        </div>
+      </div>
+      <div routerLink="../goals" class="goal-row">
+        <div class="d-flex bd-highlight">
+          <div class="p-2 bd-highlight">
+            <img src="/assets/icons/online_shopping/reshot-icon-shopping-cart-G726RKXUPD.svg" alt="" class="goal-img">
+          </div>
+          <div class="p-2 bd-highlight">
+            <div class="goal-meta-data">
+              <span class="goal-heading">Groceries</span><br>
+              <span class="goal-description">- $50.00</span>
+            </div>
+          </div>
+          <div class="p-2 flex-grow-1 bd-highlight goal-amount">
+            <svg class="transaction-expense" xmlns="http://www.w3.org/2000/svg" viewBox="-5 -4.5 24 24" width="24" fill="currentColor"><path d="M8 11.243l3.95-3.95a1 1 0 1 1 1.414 1.414l-5.657 5.657a.997.997 0 0 1-1.414 0L.636 8.707A1 1 0 1 1 2.05 7.293L6 11.243V1.657a1 1 0 1 1 2 0v9.586z"></path></svg>
+          </div>
+        </div>
+      </div>
+      <div routerLink="../goals" class="goal-row">
+        <div class="d-flex bd-highlight">
+          <div class="p-2 bd-highlight">
+            <img src="/assets/icons/big_data/reshot-icon-cloud-server-2NXLS4CG8T.svg" alt="" class="goal-img">
+          </div>
+          <div class="p-2 bd-highlight">
+            <div class="goal-meta-data">
+              <span class="goal-heading">Freelance</span><br>
+              <span class="goal-description">+ $4,600</span>
+            </div>
+          </div>
+          <div class="p-2 flex-grow-1 bd-highlight goal-amount">
+            <svg class="transaction-income" xmlns="http://www.w3.org/2000/svg" viewBox="-5 -4.5 24 24" width="24" fill="currentColor"><path d="M6 4.071l-3.95 3.95A1 1 0 0 1 .636 6.607L6.293.95a.997.997 0 0 1 1.414 0l5.657 5.657A1 1 0 0 1 11.95 8.02L8 4.07v9.586a1 1 0 1 1-2 0V4.07z"></path></svg>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>

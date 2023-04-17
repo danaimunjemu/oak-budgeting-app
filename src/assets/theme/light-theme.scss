@@ -3,7 +3,10 @@
 // mixin that enables css variables in dark mode
 @mixin lighten() {
   --sideNavBg: #{$slate1-light};
+  --card: #{$slate1-light};
+  --cardShadow: rgba(208, 210, 218, 0.15);
   --bgColor: #{$slate1-light};
   --textColor: #{$slate10-light};
   --borderColor: #{$slate1-light};
+  --formInput: #{$slate3-light};
 }
